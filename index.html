@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home | Cheetos</title>
+  </head>
+  <body>
+    <!--#navbar-->
+    <section class="bar">
+      <p></p>
+      <p></p>
+      <p></p>
+    </section>
+    <header id="navbar">
+      <section class="wrapper">
+        <div class="items">
+          <div class="left">
+            <h1>
+              <a href="">
+                <img src="images/logo.png" alt="" />
+              </a>
+            </h1>
+          </div>
+
+          <div class="right">
+            <ul>
+              <li>
+                <a href="#" class="prdthover">PRODUCTS</a>
+              </li>
+
+              <li>
+                <a href="#">ABOUT US</a>
+              </li>
+
+              <li>
+                <a href="#">RECIPES</a>
+              </li>
+
+              <li>
+                <a href="videos.html">VIDEOS</a>
+              </li>
+
+              <li>
+                <a href="#">WHERE TO BUY</a>
+              </li>
+
+              <li>
+                <a href="#">DEJA TU HUELLA</a>
+              </li>
+
+              <li>
+                <a href="#">PEPSICO TASTY REWARDS</a>
+              </li>
+
+              <li>
+                <a href="#">ES</a>
+              </li>
+
+              <li>
+                <!-- <div class="mainsearch"> -->
+                <button id="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+                <div class="gsearch">
+                  <form action="" method="get">
+                    <input
+                      type="search"
+                      value=""
+                      id="search"
+                      name="search"
+                      onfocusout="inp()"
+                      onfocus="reverseinp()"
+                    />
+                  </form>
+                </div>
+                <!-- </div> -->
+              </li>
+            </ul>
+            <div class="producthover active" id="dropdown">
+              <div class="wrapper">
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack1" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>CRUNCHY</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack2" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>Puffs</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack3" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>POPCORN</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack4" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>PRETZELS</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack5" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>MAC 'N'</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack6" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>FLAMIN</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack7" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>FANTASTIX</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack8" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>SIMPLY</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack9" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>BAKED</p>
+                  </div>
+                </div>
+                <div class="mainproduct">
+                  <div class="productimg">
+                    <img src="images/pack10" alt="" />
+                  </div>
+                  <div class="nameproduct">
+                    <p>VARIETY</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!--#navbar > end-->
+    <!-- #spotlight -->
+    <section id="spotlight"></section>
+    <!-- spotlight > end -->
+    <!-- brands section -->
+    <header id="brands">
+      <section class="wrapper">
+        <div class="products">
+          <h2>PRODUCTS</h2>
+          <div class="slider_img">
+            <img src="images/pack2" alt="" />
+            <img src="images/pack3" alt="" />
+            <img src="images/pack4" alt="" />
+            <img src="images/pack5" alt="" />
+            <img src="images/pack6" alt="" />
+            <img src="images/pack7" alt="" />
+            <img src="images/pack8" alt="" />
+            <img src="images/pack9" alt="" />
+            <img src="images/pack10" alt="" />
+          </div>
+          <div class="button">
+            <button id="left_button" onclick="right()">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button id="right_button" onclick="left()">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="productnames">
+              <h4>POPCORN</h4>
+            </div>
+          </div>
+          <div class="slidebtn">
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+          </div>
+          <div class="get_button">
+            <h3>GET CHEETOS<sup>&#174; </sup> NOW</h3>
+            <h3>GET CHEETOS<sup>&#174;</sup> NOW</h3>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- brand section > end -->
+    <!-- videos section -->
+
+    <section id="videos">
+      <div class="wrapper">
+        <div class="container">
+          <div class="wrap">
+            <div class="head">
+              <h5>VIDEOS</h5>
+            </div>
+            <div class="video">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/UihVmkDISsg?si=Gi8WFLj1KhzCBN1d"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MhP3Yx8a35I?si=_VU0FafPQjGhAblp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="more_btn">
+              <h6>MORE VIDEOS</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video section end -->
+    <!-- recipe section -->
+    <section id="recipes">
+      <div class="heading">
+        <h5>RECIPES</h5>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="img-slider">
+            <img src="images/food1" alt="" />
+            <img src="images/food2" alt="" />
+            <img src="images/food3" alt="" />
+            <img src="images/food4" alt="" />
+            <img src="images/food5" alt="" />
+          </div>
+          <div class="slide-btn">
+            <button class="left_btn" onclick="slide_left()">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="right_btn" onclick="slide_right()">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="productnames">
+            <h4>
+              CHEETOS<sup>&#174;</sup> FLAMIN' HOT<sup>&#174;</sup> Chocolate
+              Gingerbread Cookies
+            </h4>
+          </div>
+          <div class="animation-btn">
+            <h3>VIEW RECIPE</h3>
+          </div>
+          <div class="btn-line">
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+            <img src="images/minus-horizontal-straight-line.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- recipe section end -->
+    <!-- get social section -->
+    <section id="social">
+      <div class="wrapp">
+        <div class="heading">
+          <h2>GET SOCIAL</h2>
+        </div>
+        <div class="container">
+          <div class="box" id="box1" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popup1" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="box" id="box2" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popup2" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="box" id="box3" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popupvideo1" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="box" id="box4" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popupvideo2" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="box" id="box5" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popupvideo3" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="box" id="box6" onclick="boxmodalclick(this)">
+            <div class="frontbox">
+              <div class="top">
+                <a href="">cheetos</a>
+                <p>
+                  finally Cheetos Puffs you can spoon. don’t sleep on this
+                  pillow fr. link in bio
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="bottom">
+                <p>@CHEETOS 6 DAYS AGO</p>
+                <i class="fa-sharp fa-solid fa-share"></i>
+              </div>
+            </div>
+            <div class="image">
+              <div class="img">
+                <img src="images/popupvideo4" alt="" />
+              </div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="follow">
+          <h3>Follow Cheetos®</h3>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-brands fa-x-twitter"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="mainpop">
+        <div class="poppage" id="poppage">
+          <div class="popbox" id="popbox1">
+            <div class="leftimg">
+              <img src="images/popup1" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    finally Cheetos Puffs you can spoon. don’t sleep on this
+                    pillow fr. link in bio.
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popbox" id="popbox2">
+            <div class="leftimg">
+              <img src="images/popup2" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nemo esse quo obcaecati molestias, quis dolore odit.
+                    Deleniti consequuntur alias itaque pariatur,
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popbox" id="popbox3">
+            <div class="leftimg">
+              <img src="images/popupvideo1" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    finally Cheetos Puffs you can spoon. don’t sleep on this
+                    pillow fr. link in bio.
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popbox" id="popbox4">
+            <div class="leftimg">
+              <img src="images/popupvideo2" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos est optio corporis praesentium vel autem sunt expedita
+                    voluptatum, minus illum sapiente deleniti maxime quae,
+                    facere tenetur veritatis error. Facere, reprehenderit.
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popbox" id="popbox5">
+            <div class="leftimg">
+              <img src="images/popupvideo3" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    finally Cheetos Puffs you can spoon. don’t sleep on this
+                    pillow fr. link in bio.
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popbox" id="popbox6">
+            <div class="leftimg">
+              <img src="images/popupvideo4" alt="" />
+            </div>
+            <div class="rightbox">
+              <div class="topbox">
+                <div class="flextop">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <div class="close">
+                    <span><i class="fa-solid fa-xmark"></i> </span>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <a href="">cheetos</a>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos, facere.
+                  </p>
+                </div>
+              </div>
+              <div class="bottombox">
+                <p>Go to original post</p>
+                <div class="flexbottom">
+                  <p>0 likes</p>
+                  <p>0 comments</p>
+                  <i class="fa-sharp fa-solid fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="leftagle" id="rightbtn">
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+          </button>
+          <button class="rightagle" id="leftbtn">
+            <i class="fa-sharp fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- get social section end -->
+    <!-- footer section -->
+    <section id="footer">
+      <div class="maincontent">
+        <div class="underline"></div>
+        <div class="buy">
+          <ul>
+            <li>Where to buy</li>
+            <li>PepsiCo Tasty Rewards</li>
+            <li>Contact Us</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Ads & Tracking</li>
+            <li>PepsiCo Foodservice</li>
+            <li>Accessibility Statement</li>
+            <li>Cookie preferences</li>
+          </ul>
+        </div>
+        <div class="logoo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="copyright">
+          <p>© 2023 Frito-Lay North America, Inc. a Division of PepsiCo</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/cheetos.js"></script>
+  </body>
+</html>
