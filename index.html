@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Home | Cheetos</title>
   </head>
@@ -66,7 +67,6 @@
               </li>
 
               <li>
-                <!-- <div class="mainsearch"> -->
                 <button id="searchButton">
                   <i class="fa fa-search"></i>
                 </button>
@@ -181,8 +181,8 @@
     <header id="brands">
       <section class="wrapper">
         <div class="products">
-          <h2>PRODUCTS</h2>
-          <div class="slider_img">
+          <h2 data-aos="fade-up">PRODUCTS</h2>
+          <div class="slider_img" data-aos="zoom-in">
             <img src="images/pack2" alt="" />
             <img src="images/pack3" alt="" />
             <img src="images/pack4" alt="" />
@@ -216,7 +216,7 @@
             <img src="images/minus-horizontal-straight-line.png" alt="" />
             <img src="images/minus-horizontal-straight-line.png" alt="" />
           </div>
-          <div class="get_button">
+          <div class="get_button" data-aos="fade-up">
             <h3>GET CHEETOS<sup>&#174; </sup> NOW</h3>
             <h3>GET CHEETOS<sup>&#174;</sup> NOW</h3>
           </div>
@@ -230,7 +230,7 @@
       <div class="wrapper">
         <div class="container">
           <div class="wrap">
-            <div class="head">
+            <div class="head" data-aos="fade-up">
               <h5>VIDEOS</h5>
             </div>
             <div class="video">
@@ -242,6 +242,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                data-aos="fade-right"
               ></iframe>
               <iframe
                 width="560"
@@ -251,9 +252,10 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                data-aos="fade-left"
               ></iframe>
             </div>
-            <div class="more_btn">
+            <div class="more_btn" data-aos="fade-up">
               <h6>MORE VIDEOS</h6>
             </div>
           </div>
@@ -263,7 +265,7 @@
     <!-- video section end -->
     <!-- recipe section -->
     <section id="recipes">
-      <div class="heading">
+      <div class="heading" data-aos="fade-up">
         <h5>RECIPES</h5>
       </div>
       <div class="wrapper">
@@ -289,7 +291,7 @@
               Gingerbread Cookies
             </h4>
           </div>
-          <div class="animation-btn">
+          <div class="animation-btn" data-aos="fade-up">
             <h3>VIEW RECIPE</h3>
           </div>
           <div class="btn-line">
@@ -306,7 +308,7 @@
     <!-- get social section -->
     <section id="social">
       <div class="wrapp">
-        <div class="heading">
+        <div class="heading" data-aos="fade-up">
           <h2>GET SOCIAL</h2>
         </div>
         <div class="container">
@@ -443,10 +445,10 @@
             </div>
           </div>
         </div>
-        <div class="follow">
+        <div class="follow" data-aos="zoom-out">
           <h3>Follow Cheetos®</h3>
         </div>
-        <ul>
+        <ul data-aos="fade-left">
           <li>
             <i class="fa-brands fa-x-twitter"></i>
           </li>
@@ -664,7 +666,7 @@
     <section id="footer">
       <div class="maincontent">
         <div class="underline"></div>
-        <div class="buy">
+        <div class="buy" data-aos="fade-up">
           <ul>
             <li>Where to buy</li>
             <li>PepsiCo Tasty Rewards</li>
@@ -687,5 +689,9 @@
     </section>
 
     <script src="js/cheetos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
